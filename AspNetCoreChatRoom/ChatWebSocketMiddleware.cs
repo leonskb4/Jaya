@@ -98,7 +98,6 @@ namespace AspNetCoreChatRoom
                     return null;
                 }
 
-                // Encoding UTF8: https://tools.ietf.org/html/rfc6455#section-5.6
                 using (var reader = new StreamReader(ms, Encoding.UTF8))
                 {
                     return await reader.ReadToEndAsync();

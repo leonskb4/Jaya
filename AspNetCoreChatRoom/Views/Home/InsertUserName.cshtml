@@ -5,6 +5,12 @@
 }
 @Html.ValidationSummary()
 <form action="@Url.Action("Index")" method="post">
-    <input type="text" placeholder="Insert user name" name="userName" />
-    <input type="submit" value="Eńter" />
+    <div class="row">
+        <div class="col-md-3">
+            <input class="form-control" type="text" placeholder="Insert user name" name="userName" />
+        </div>
+        <div class="col-md-3">
+            <input class="btn btn-block btn-success" type="submit" value="Enter" />
+        </div>
+    </div>
 </form>
